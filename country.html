@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <header >
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1 z-50">
+
+                <li tabindex="0">
+                  <a>
+                    Filtered by Region
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                  </a>
+                  <ul class="p-2 bg-base-100">
+                    <li onclick="countryDetails('region/Asia')"><a>Asia</a></li>
+                    <li onclick="countryDetails('region/Africa')"><a>Africa</a></li>
+                    <li onclick="countryDetails('region/Americas')"><a>Americas</a></li>
+                    <li onclick="countryDetails('region/Europe')"><a>Europe</a></li>
+                    <li onclick="countryDetails('region/Oceania')"><a>Oceania</a></li>
+                  </ul>
+                </li>
+                <li tabindex="0">
+                  <a>
+                    Capital City
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                  </a>
+                  <ul id="capital-container" class="p-2 bg-base-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li class="" tabindex="0">
+                  <a>
+                    language
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                  </a>
+                  <ul class="p-2 bg-base-100 ">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+        <section class="m-10">
+            <div id="country-container" class="grid grid-cols-4 gap-5">
+                
+            </div>
+        </section>
+    </main>
+
+
+    
+    <script src="js/country.js"></script>
+</body>
+</html>
